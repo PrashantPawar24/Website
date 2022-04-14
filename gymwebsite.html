@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,14 +28,20 @@
     }
 
     .left img {
-        width: 136px;
+      border:2px solid white;
+       border-radius:50px;
+        width: 100px;
         filter: invert(100%);
     }
 
     .left div {
-        line-height: 19px;
-        font-size: 26px;
-        text-align: center;
+    
+
+    line-height: 12px;
+    /* font-size: 75%; */
+    text-align: left;
+    font-size: 90%;
+    width: 200%;
     }
 
     .mid {
@@ -121,14 +127,38 @@
         width: 74%;
         margin: 20px auto;
     }
+.anime{
+display:inline-block;
+     position:absolute;
+top:100%;
+left:8%;
+background:linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+background-size:300%;
+font-size:5px;
+font-family:sans-serif;
+Letter-spacing:5px;
+font-weight:600;
+word-spacing:5px;
+-webkit-text-fill-color:transparent;
+-webkit-background-clip:text;
+animation:animate 10s linear infinite;
+}
+@keyframes animate{
+0%{
+      background-position:0%;
+}
+100%{
+background-position:400%;
+}
+}
 </style>
 
 <body>
     <header class="header">
         <!-- Left box for logo -->
         <div class="left">
-            <img src="img/gym.png" alt="">
-            <div>Prashant Fitness</div>
+            <img src="logogym.jpg" alt="">
+            <div class="anime">Prashant Fitness</div>
         </div>
         <!-- Mid box for navbar -->
         <div class="mid">
